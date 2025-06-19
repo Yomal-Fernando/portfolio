@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <meta name="description" content="Full Stack Developer & UI/UX Designer Portfolio">
+    <title>Yomal Fernando - Portfolio</title>
+    <meta name="description" content="Business Analyst and IT Professional with a passion for innovation and problem-solving.">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -236,15 +236,19 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
+            overflow: hidden;             /* clips the image into a circle */
             margin: 2rem auto;
-            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
             border: 4px solid var(--glass-border);
-            /* ADD PROFILE PHOTO HERE */
-        }
+            background: none;             /* remove any gradient fallback */
+}
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;            /* ensures the photo fills the circle without distortion */
+            display: block;
+}
+
 
         .cta-buttons {
             display: flex;
@@ -631,7 +635,7 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo"><!-- REPLACE WITH YOUR NAME -->YourName</div>
+            <div class="logo"><!-- REPLACE WITH YOUR NAME -->Yomal Fernando</div>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -647,10 +651,12 @@
         <div class="container">
             <div class="hero-content">
                 <div class="profile-photo">
-                    <!-- ADD PROFILE PHOTO HERE -->
+                      <img src="assets/images/profile.png" alt="Yomal Fernando">
+                </div>
+
                     Your Photo
                 </div>
-                <h1><!-- REPLACE WITH YOUR NAME -->Your Name</h1>
+                <h1><!-- REPLACE WITH YOUR NAME -->Yomal Fernando</h1>
                 <p class="tagline">
                     I'm a <span class="typed-text" id="typed-text"></span>
                 </p>
@@ -709,21 +715,21 @@
             <div class="education-timeline">
                 <div class="education-item">
                     <div class="education-content">
-                        <h3>Master of Computer Science</h3>
-                        <h4><!-- REPLACE WITH YOUR DETAILS -->University Name</h4>
-                        <p>Specialized in Software Engineering and AI. GPA: 3.8/4.0</p>
+                        <h3>Bachelor of Business</h3>
+                        <h4>Victoria University - Australia</h4>
+                        <p>Double Majors in Information Systems Management & Innovation Management</p>
                         <!-- ADD EDUCATION LOGOS HERE -->
                     </div>
-                    <div class="education-date">2022-2024</div>
+                    <div class="education-date">2019-2021</div>
                 </div>
                 <div class="education-item">
                     <div class="education-content">
-                        <h3>Bachelor of Computer Science</h3>
-                        <h4><!-- REPLACE WITH YOUR DETAILS -->University Name</h4>
-                        <p>Magna Cum Laude. Focus on Web Development and Database Systems.</p>
+                        <h3>Advanced Diploa in Business</h3>
+                        <h4>ECA Graduate Institute</h4>
+                        <p>description</p>
                         <!-- ADD EDUCATION LOGOS HERE -->
                     </div>
-                    <div class="education-date">2018-2022</div>
+                    <div class="education-date">2018-2019</div>
                 </div>
             </div>
         </div>
